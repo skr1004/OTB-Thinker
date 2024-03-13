@@ -54,7 +54,7 @@ public class ResumeMatcher {
         con.setDoOutput(true);
 
         Map<String, Object> json = new HashMap<>();
-        json.put("model", "text-davinci-003");
+        json.put("model", "gpt-3.5-turbo-instruct");
         json.put("prompt", String.format(QUERY, pdf));
         json.put("temperature", 0.5);
         json.put("max_tokens", 2048);
