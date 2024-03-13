@@ -25,7 +25,7 @@ public class ResumeMatcher {
     private static final String OPENAI_API_KEY = "";
     private static final String SAMPLE_PDF_FILE = "sample-resume.pdf";
     private static final String OPENAI_API_URL = "https://api.openai.com/v1/completions";
-    private static final String QUERY = "Want to extract fields: PO Number, Total Amount and Delivery Address Return result in JSON format without any explanation. The PO content is as follows: %s";
+    private static final String QUERY = "Want to extract fields: skill, experience and Certifications Return result in JSON format without any explanation. %s";
 
     public static void main(String[] args) throws IOException {
         var pdf = extractPDFContent();
